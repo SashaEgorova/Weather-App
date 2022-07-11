@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@700&family=Kdam+Thmor+Pro&display=swap"
+    rel="stylesheet" />
+  <title>Weather-App</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="container">
+      <form id="search-form">
+        <div class="row mb-2 justify-content-end">
+          <div class="col-8 searchBar">
+            <input type="location" placeholder=" Enter your location" class="form-control" id="search-text" />
+          </div>
+          <div class="col-2">
+            <input type="submit" value="Search" class="btn btn-primary" />
+          </div>
+          <div class="col-2">
+            <button class="btn btn-info" is="current-location">
+              Current
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="CurrentCity">
+            <h1 id="city"></h1>
+            <span>Mon 7:45 p.m.</span>
+            <h2>
+              ⛅️<span id="temprature">19</span><a href="#" id="celsius">°C</a>|<a href="#" id="fahrenheit">°F</a>
+            </h2>
+
+            <span>Humidity: <span id="humidity">76</span>
+              <br />
+              Wind: <span id="wind">3</span>km/h</span>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="row">
+            <div class="col-2 forecastDates">
+              ☀️ Tue <br />
+              25/14°C
+            </div>
+            <div class="col-2 forecastDates">
+              ⛅️ Wed <br />
+              21/13°C
+            </div>
+            <div class="col-2 forecastDates">
+              🌧 Thu <br />
+              20/10°C
+            </div>
+            <div class="col-2 forecastDates">
+              ☀️ Fri <br />
+              25/14°C
+            </div>
+            <div class="col-2 forecastDates">
+              ☁️ Sat <br />
+              22/12°C
+            </div>
+            <div class="col-2 forecastDates">
+              🌤Sun <br />
+              23/14°C
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
+</html>

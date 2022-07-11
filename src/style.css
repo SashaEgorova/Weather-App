@@ -1,0 +1,44 @@
+.CurrentCity {
+  position: relative;
+  border: 1px solid #6eaef7;
+  border-radius: 20px;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+form {
+  position: relative;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.container {
+  padding: 50px;
+}
+.forecastDates {
+  border: 1px solid #6eaef7;
+  border-radius: 20px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 10px 30px;
+  font-size: 15px;
+  font-family: "Kdam Thmor Pro", sans-serif;
+}
+.searchBar {
+  max-width: 200px;
+}
+.box {
+  width: 700px;
+  height: 350px;
+  border: 1px solid #6eaef7;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 0;
+  display: block;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    rgb(160, 199, 254) 74.6%
+  );
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
