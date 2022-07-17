@@ -24,6 +24,11 @@ function displayWeather(response) {
   let windElement = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
   windElement.innerHTML = `${wind}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
