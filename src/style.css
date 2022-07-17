@@ -35,10 +35,12 @@ form {
   margin: 30px auto;
   padding: 0;
   display: block;
-  background: radial-gradient(
-    592px at 48.2% 50%,
-    rgba(255, 255, 249, 0.6) 0%,
-    rgb(160, 199, 254) 74.6%
-  );
+  background: white;
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.sourse {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  margin: 10px 0;
+  font-size: 14px;
 }
